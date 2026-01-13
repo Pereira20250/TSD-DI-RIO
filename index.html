@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>TEEMPO SOZINHO COM DEUS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="tsd.ico" type="image/x-icon">
+</head>
+
+<body>
+<div class="app">
+
+  <header>
+    <!-- LOGO DO TSD -->
+     <img src="tsd.png" alt="Logo TSD" class="logo-top">
+    <h1>TEEMPO SOZINHO COM DEUS</h1>
+  </header>
+
+  <button onclick="toggleTheme()">🌙 / ☀️</button>
+
+  <div class="card">
+    <h3>📖 Versículo do dia</h3>
+    <p id="versiculo"></p>
+    <small id="referencia"></small>
+  </div>
+
+  <div class="card"><b>1️⃣ Oração</b><textarea id="oracao"></textarea></div>
+  <div class="card"><b>2️⃣ Louvor</b><textarea id="louvor"></textarea></div>
+  <div class="card"><b>3️⃣ Palavra</b><textarea id="palavra"></textarea></div>
+  <div class="card"><b>4️⃣ Oração de Gratidão</b><textarea id="agradecimento"></textarea></div>
+  <div class="card"><b>5️⃣ Ouvir a voz de Deus</b><textarea id="voz"></textarea></div>
+
+  <div class="card">
+    <b>🕊️ O que Deus falou comigo hoje</b>
+    <textarea id="fala"></textarea>
+  </div>
+
+  <button onclick="saveTSD()">💾 Salvar TSD</button>
+  <button onclick="exportPDF()">📤 Exportar PDF</button>
+
+  <div class="card">
+    <b>🔔 Lembrete diário</b>
+    <input type="time" id="hora">
+    <button onclick="saveReminder()">Salvar lembrete</button>
+  </div>
+
+  <section id="history"></section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
